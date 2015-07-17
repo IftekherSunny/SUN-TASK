@@ -1,5 +1,7 @@
 $(function() {
 
+    Vue.http.headers.common['X-CSRF-TOKEN'] = $('#token').attr('content');
+
     /**
      * Init jQuery UI
      */
