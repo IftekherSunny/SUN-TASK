@@ -58,7 +58,7 @@ $(function() {
                     self.currentPage = response.paginator.current_page;
 
                     if(self.totalPage == 0 && self.searchKey == ''){
-                        window.location.assign('/');
+                      //  window.location.assign('/');
                     }
 
                     while(response.data.length) {
