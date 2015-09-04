@@ -1,5 +1,7 @@
 ## SUN TASK
 
+[![Build Status](https://travis-ci.org/IftekherSunny/SUN-TASK.svg?branch=master)](https://travis-ci.org/IftekherSunny/SUN-TASK)
+
 Sun task helps you to manage your tasks easily.
  
 ## Remainder
