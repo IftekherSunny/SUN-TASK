@@ -1,7 +1,7 @@
 {
-    "name": "laravel/lumen",
-    "description": "The Laravel Lumen Framework.",
-    "keywords": ["framework", "laravel", "lumen"],
+    "name": "sun/task",
+    "description": "Sun task helps you to manage your tasks easily.",
+    "keywords": ["framework", "laravel", "lumen", "sun", "task"],
     "license": "MIT",
     "type": "project",
     "require": {
