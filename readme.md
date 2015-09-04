@@ -1,6 +1,7 @@
 ## SUN TASK
 
 [![Build Status](https://travis-ci.org/IftekherSunny/SUN-TASK.svg?branch=master)](https://travis-ci.org/IftekherSunny/SUN-TASK)
+[![Total Downloads](https://poser.pugx.org/sun/task/downloads)](https://packagist.org/packages/sun/task) [![Latest Stable Version](https://poser.pugx.org/sun/task/v/stable)](https://packagist.org/packages/sun/task) [![Latest Unstable Version](https://poser.pugx.org/sun/task/v/unstable)](https://packagist.org/packages/sun/task) [![License](https://poser.pugx.org/sun/task/license)](https://packagist.org/packages/sun/task)
 
 Sun task helps you to manage your tasks easily.
  
