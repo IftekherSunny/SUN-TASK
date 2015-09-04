@@ -5,6 +5,12 @@
 
 Sun task helps you to manage your tasks easily.
  
+## Installation via Composer
+
+```
+ composer create-project sun/task
+```
+
 ## Remainder
 
 Artisan command to send remaining task through email.
