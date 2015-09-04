@@ -26,6 +26,17 @@
             "tests/"
         ]
     },
+    "scripts": {
+      "post-install-cmd": [
+        "composer dump -o"
+      ],
+      "post-update-cmd": [
+        "composer dump -o"
+      ],
+      "post-create-project-cmd": [
+        "php artisan key:generate"
+      ]
+    },
     "config": {
         "preferred-install": "dist"
     }
