@@ -22,4 +22,3 @@ class TaskTransformer extends Transformer
         ];
     }
 }
-//date("h : i : A", strtotime($task['time']))

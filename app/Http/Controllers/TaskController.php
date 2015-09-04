@@ -19,6 +19,8 @@ class TaskController extends Controller
     protected $taskRepo;
 
     /**
+     * Create a new task controller instance
+     *
      * @param TaskTransformer $taskTransformer
      * @param TaskRepository  $taskRepo
      */
@@ -30,6 +32,8 @@ class TaskController extends Controller
     }
 
     /**
+     * To fetch all tasks
+     *
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function index()
@@ -45,6 +49,8 @@ class TaskController extends Controller
     }
 
     /**
+     * To fetch a single task that associated with the given id
+     *
      * @param task $id
      *
      * @return \Symfony\Component\HttpFoundation\Response
@@ -57,7 +63,9 @@ class TaskController extends Controller
     }
 
     /**
-     * @return \Laravel\Lumen\Http\ResponseFactory|\Symfony\Component\HttpFoundation\Response
+     * To save a task
+     *
+     * @return \Laravel\Lumen\Http\ResponseFactory
      */
     public function store()
     {
@@ -74,11 +82,13 @@ class TaskController extends Controller
 
         }
 
-        return $this->responseBad('Please, provide all the input correctly.');
+        return $this->responseBad('Please, provides all the input correctly.');
 
     }
 
     /**
+     * To update a task
+     *
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function update()
@@ -99,6 +109,8 @@ class TaskController extends Controller
     }
 
     /**
+     * To delete a task
+     *
      * @param task $id
      *
      * @return \Symfony\Component\HttpFoundation\Response
@@ -135,5 +147,4 @@ class TaskController extends Controller
                     !empty(Request::get('time'))
                 );
     }
-
 }

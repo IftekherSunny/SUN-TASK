@@ -2,25 +2,26 @@
 
 namespace App\Repositories;
 
-use App\Models\Task;
 use Carbon\Carbon;
+use App\Models\Task;
 
 class TaskRepository
 {
     /**
+     * To get tasks with pagination
+     *
      * @param $item
      *
      * @param $searchKey
      *
      * @return tasks
      */
-    public function getTaskWithPaginate($item, $searchKey)
+    public function getTaskWithPaginate($item = 5, $searchKey = '')
     {
         if( ! $searchKey == '') {
             $field = strstr($searchKey, '@ ', true);
             $value = str_replace("@ ",'',strstr($searchKey, '@ '));
-        }
-        else {
+        } else {
             $field = '';
             $value = '';
         }
@@ -35,6 +36,8 @@ class TaskRepository
     }
 
     /**
+     * To find tasks with given id
+     *
      * @param $id
      *
      * @return task
@@ -45,6 +48,8 @@ class TaskRepository
     }
 
     /**
+     * To create task
+     *
      * @param $task
      *
      * @return static
@@ -60,6 +65,8 @@ class TaskRepository
     }
 
     /**
+     * To update task
+     *
      * @param $task
      *
      * @return mixed
@@ -75,6 +82,8 @@ class TaskRepository
     }
 
     /**
+     * To delete task
+     *
      * @param $id
      *
      * @return int

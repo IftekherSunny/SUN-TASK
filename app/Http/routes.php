@@ -11,24 +11,22 @@
 |
  */
 
-
 $app->get('/', function () {
     return view('app');
 });
 
 $app->get('/reset/{key}', 'ResetController@databaseReset');
 
-
 /**
- *  API
+ *  API Version 1
  **/
 
 $app->group(['prefix' => 'api/v1', 'namespace' => 'App\Http\Controllers'], function () use ($app) {
 
-    $app->get('/tasks', 'TaskController@index');
-    $app->get('/tasks/{id}', 'TaskController@show');
-    $app->post('/tasks', 'TaskController@store');
-    $app->post('/tasks/update', 'TaskController@update');
-    $app->delete('/tasks/{id}', 'TaskController@destroy');
+   $app->get('/tasks', 'TaskController@index');
+   $app->get('/tasks/{id}', 'TaskController@show');
+   $app->post('/tasks', 'TaskController@store');
+   $app->post('/tasks/update', 'TaskController@update');
+   $app->delete('/tasks/{id}', 'TaskController@destroy');
 
 });

@@ -27,7 +27,7 @@
 
                     <div class="form-group">
                         <label>Description: <small class="error">*</small></label>
-                        <input type="text" v-el="newDescription"  v-model="task.description" class="form-control" />
+                        <textarea type="text" v-el="newDescription"  v-model="task.description" class="form-control" rows="5"></textarea>
                     </div>
 
                     <div class="form-group">
