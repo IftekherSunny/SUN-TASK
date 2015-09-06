@@ -15,7 +15,7 @@ Sun task helps you to manage your tasks easily.
 
 Artisan command to send remaining task through email.
 ```
-Php artisan sun-task:remainder
+php artisan sun-task:remainder
 ```
 
 ## Configuration
@@ -34,6 +34,12 @@ Setup your email id & name for getting remaining task through email.
 ```
 REMAINDER_EMAIL=your_email@gmail.com
 REMAINDER_NAME=your_name
+```
+
+## To Start Development Server
+
+```
+php artisan serve
 ```
 
 ## Reset Dummy Data
