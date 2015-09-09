@@ -2,9 +2,7 @@
 
 class TaskTest extends ApiTester
 {
-    /**
-     * @test
-     */
+    /** @test */
     public function it_fetches_all_tasks()
     {
         // arrange

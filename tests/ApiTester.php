@@ -2,18 +2,27 @@
 
 class ApiTester extends TestCase
 {
+    /**
+     * Migrate database
+     * & Session start
+     */
     public function setUp()
     {
         parent::setUp();
 
-        \Session::start();
+        $this->artisan('migrate');
+
+        DB::beginTransaction();
+
+        Session::start();
     }
 
+    /**
+     * Rollback database
+     */
     public function tearDown()
     {
-        $this->artisan('migrate:refresh');
-
-        parent::tearDown();
+        DB::rollBack();
     }
 
     /**
